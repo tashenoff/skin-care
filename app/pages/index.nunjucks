@@ -1,0 +1,56 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+            {% block content %}
+ 
+            {% include "partials/home.njk" %}
+
+    
+    <section>
+    
+       
+            {% include "partials/services.njk" %}
+
+    </section>
+
+
+
+
+    <section class="block-steps">
+    
+       
+            {% include "partials/steps.njk" %}
+
+    </section>
+
+
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-fifty">Лого</div>
+          <div class="col-fifty">
+            <div class="footer-social">
+              Мы в соц сетях
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+{% endblock %}
+    <script src="js/libs.min.js"></script>
+  </body>
+</html>

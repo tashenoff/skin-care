@@ -1,15 +1,20 @@
 .block-steps {
   background-image: url("/img/bg-two.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
 }
 
 .block-steps-number {
   display: inline-block;
-  background: #ccc;
-  color: #000;
+  background: $secondary;
+  color: #fff;
   text-align: center;
+  font-size: $h1-font-size;
+  font-family: $font-heading;
   border-radius: 50%;
-  border: 11px solid red;
-  padding: 2.1em 2.65em;
+  border: 11px solid #fff;
+  padding: 32px 35px;
 }
 
 .block-steps-item {
@@ -17,4 +22,11 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.block-steps-desc {
+  margin-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
 }

@@ -11,3 +11,17 @@
   font-style: normal;
   font-weight: bold;
 }
+
+.button-primary {
+  border-radius: $border-radius-base;
+  border: 2px solid #fff6f6;
+  background-color: $primary;
+  padding: 16px;
+  font-size: $button-font-size;
+  color: #fff;
+  font-family: $base-font-family;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  font-style: normal;
+  font-weight: bold;
+}

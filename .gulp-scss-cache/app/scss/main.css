@@ -112,30 +112,60 @@
   font-style: normal;
   font-weight: bold; }
 
+.button-primary {
+  border-radius: 8px;
+  border: 2px solid #fff6f6;
+  background-color: #0b9be2;
+  padding: 16px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  font-style: normal;
+  font-weight: bold; }
+
 footer {
-  background-color: #3ca0d0; }
+  background-color: #3ca0d0;
+  min-height: 139px; }
 
 .footer-social {
   display: flex;
   justify-content: flex-end; }
 
 .block-steps {
-  background-image: url("/img/bg-two.png"); }
+  background-image: url("/img/bg-two.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px; }
 
 .block-steps-number {
   display: inline-block;
-  background: #ccc;
-  color: #000;
+  background: #3ca0d0;
+  color: #fff;
   text-align: center;
+  font-size: 40px;
+  font-family: "Russo One", sans-serif;
   border-radius: 50%;
-  border: 11px solid red;
-  padding: 2.1em 2.65em; }
+  border: 11px solid #fff;
+  padding: 32px 35px; }
 
 .block-steps-item {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center; }
+
+.block-steps-desc {
+  margin-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center; }
+
+.block-help {
+  padding: 50px; }
+  .block-help h1 {
+    color: #3e4345; }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
@@ -628,7 +658,6 @@ h1 {
   font-size: 40px;
   color: #fff;
   letter-spacing: 2px;
-  max-width: 640px;
   font-family: "Russo One", sans-serif; }
 
 .header-content {
