@@ -63,20 +63,5 @@
   /* на всю ширину */
   .item:first-child {
     margin-right: 0; } }
-.container {
-  max-width: 1140px;
-  margin: 0 auto; }
 
-.col-three {
-  width: 100%;
-  width: -webkit-calc(33.33% - 30px);
-  width: -moz-calc(33.33% - 30px);
-  width: calc(33.33% - 30px);
-  margin: 15px; }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px; }
-
-/*# sourceMappingURL=libs.css.map */
+/*# sourceMappingURL=mainitem.css.map */

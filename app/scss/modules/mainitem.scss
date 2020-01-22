@@ -1,13 +1,14 @@
-@charset "UTF-8";
 .mainitem,
 .item {
   flex-grow: 1;
   /* растягивание элементов */
-  background: #b5ced8;
+
+  background: $primary;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* цифры по центру */ }
+  /* цифры по центру */
+}
 
 .mainitem {
   min-height: 300px;
@@ -16,10 +17,12 @@
   width: -moz-calc(33.33% - 30px);
   width: calc(33.33% - 30px);
   margin: 15px;
-  /* высота основного блока */ }
+  /* высота основного блока */
+}
 
 .sideitem {
   /* flex:0 0 150px; */
+
   /* ширина 150 */
   flex-shrink: 0;
   /* Убираем уменьшение = 150 */
@@ -28,55 +31,52 @@
   width: -moz-calc(33.33% - 30px);
   width: calc(33.33% - 30px);
   margin: 15px;
+
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .item:first-child {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 /* меньше 600px */
 @media screen and (max-width: 600px) {
   .flex {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
 
   /* для переноса */
+
   .sideitem {
     flex-direction: row;
-    flex-basis: 100%; }
+    flex-basis: 100%;
+  }
 
   .item {
     margin-left: 0;
-    margin-top: 10px; }
+    margin-top: 10px;
+  }
 
   .item:first-child {
     margin-bottom: 0;
-    margin-right: 10px; } }
+    margin-right: 10px;
+  }
+}
+
 /* меньше 450px */
 @media screen and (max-width: 450px) {
   .sideitem {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
 
   /* разрешаем перенос */
   .item {
-    flex-basis: 100%; }
+    flex-basis: 100%;
+  }
 
   /* на всю ширину */
   .item:first-child {
-    margin-right: 0; } }
-.container {
-  max-width: 1140px;
-  margin: 0 auto; }
-
-.col-three {
-  width: 100%;
-  width: -webkit-calc(33.33% - 30px);
-  width: -moz-calc(33.33% - 30px);
-  width: calc(33.33% - 30px);
-  margin: 15px; }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px; }
-
-/*# sourceMappingURL=libs.css.map */
+    margin-right: 0;
+  }
+}
