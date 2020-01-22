@@ -1,24 +1,40 @@
 @import "libs";
+@include normalize;
 body {
   color: $base-font-color;
-  font-size: 26px;
-  font-family: $base-font;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
 }
-
-.home-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  height: 100%;
-}
-
-.home-title h1 {
-  font-size: 40px;
+h1 {
+  font-size: $h1-font-size;
   color: #fff;
   letter-spacing: 2px;
+  max-width: 640px;
   font-family: $font-heading;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 1px solid red;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+
+  ul {
+    margin: 2.5em 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 1rem;
+    ul {
+      margin: 0em 0;
+    }
+  }
 }
 
 .header-banner {
@@ -26,6 +42,13 @@ body {
   height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: 600px) {
+    height: 100vh;
+    ul {
+      margin: 2em 0;
+    }
+  }
 }
 
 img {

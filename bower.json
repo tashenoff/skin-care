@@ -1,0 +1,21 @@
+{
+  "name": "myproject",
+  "description": "My First Gulp Project",
+  "main": "index.js",
+  "authors": [
+    "alex"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tashenoff/skin-care",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "normalize.scss#^7.0.1"
+  }
+}

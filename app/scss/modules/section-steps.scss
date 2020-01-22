@@ -1,0 +1,20 @@
+.block-steps {
+  background-image: url("/img/bg-two.png");
+}
+
+.block-steps-number {
+  display: inline-block;
+  background: #ccc;
+  color: #000;
+  text-align: center;
+  border-radius: 50%;
+  border: 11px solid red;
+  padding: 2.1em 2.65em;
+}
+
+.block-steps-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

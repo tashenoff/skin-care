@@ -3,6 +3,14 @@
   margin: 0 auto;
 }
 
+.col-four {
+  width: 100%;
+  width: -webkit-calc(25% - 30px);
+  width: -moz-calc(25% - 30px);
+  width: calc(25% - 30px);
+  margin: 15px;
+}
+
 .col-three {
   width: 100%;
   width: -webkit-calc(33.33% - 30px);
@@ -11,8 +19,20 @@
   margin: 15px;
 }
 
+.col-fifty {
+  width: 100%;
+  width: -webkit-calc(50% - 30px);
+  width: -moz-calc(50% - 30px);
+  width: calc(50% - 30px);
+  margin: 15px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
+  @media screen and (max-width: 600px) {
+    padding: 1rem;
+    margin: 0;
+  }
 }
