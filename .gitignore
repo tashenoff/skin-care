@@ -3,9 +3,3 @@
 *.sass.map
 *.scss.map
 node_modules
-package.json
-bowerrc
-debug.log
-gulpfile.js
-package-lock.json
-package.json
