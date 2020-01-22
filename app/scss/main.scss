@@ -1,5 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 body {
   background-color: red;
   color: black;
-  font-size: 20px;
+  font-size: 26px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.home-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+
+
+.home-title h1 {
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.header-banner {
+  background-image: url('/img/Rectangle_81.png');
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+
+.col-three {
+  width: 100%;
+  width: -webkit-calc(33.33% - 30px);
+  width: -moz-calc(33.33% - 30px);
+  width: calc(33.33% - 30px);
+  margin: 15px;
+
+}
+
+
+
+.row {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+
+
+
+}
+
+
+img {
+  width: 100%;
+}
+
+
+
+.mainitem,
+.item {
+  flex-grow: 1;
+  /* растягивание элементов */
+
+  background: #b5ced8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* цифры по центру */
+}
+
+.mainitem {
+  min-height: 300px;
+  width: 100%;
+  width: -webkit-calc(33.33% - 30px);
+  width: -moz-calc(33.33% - 30px);
+  width: calc(33.33% - 30px);
+  margin: 15px;
+  /* высота основного блока */
+}
+
+.sideitem {
+  /* flex:0 0 150px; */
+
+  /* ширина 150 */
+  flex-shrink: 0;
+  /* Убираем уменьшение = 150 */
+  width: 100%;
+  width: -webkit-calc(33.33% - 30px);
+  width: -moz-calc(33.33% - 30px);
+  width: calc(33.33% - 30px);
+  margin: 15px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.item:first-child {
+  margin-bottom: 30px;
+}
+
+
+
+/* меньше 600px */
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  /* для переноса */
+
+  .sideitem {
+    flex-direction: row;
+    flex-basis: 100%;
+  }
+
+  .item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .item:first-child {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+
+/* меньше 450px */
+@media screen and (max-width: 450px) {
+  .sideitem {
+    flex-wrap: wrap;
+  }
+
+  /* разрешаем перенос */
+  .item {
+    flex-basis: 100%;
+  }
+
+  /* на всю ширину */
+  .item:first-child {
+    margin-right: 0;
+  }
 }
